@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jonathan's Website</title>
+    <title>Jonathan Rothe | Cybersecurity Professional</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="pictures/favicon.png" type="image/x-icon">
 </head>
 <body>
     <header>
         <h1>Jonathan Rothe</h1>
+        <p class="tagline">Cybersecurity &amp; Compliance Professional</p>
         <nav>
             <ul>
-                <li><a href="resume.html">My Resume</a></li>
-                <li><a href="about.html">About Me</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
                 <li><a href="projects.html">Projects</a></li>
             </ul>
         </nav>
@@ -85,8 +87,45 @@
     </main>
 
     <footer>
-        <p>Developed by Jonathan Rothe</p>
+        <p>// Jonathan Rothe · jonathan-rothe.com · Built by Jonathan Rothe</p>
     </footer>
+
+    <script>
+        // Typewriter effect
+        const phrases = [
+            'Cybersecurity &amp; Compliance Professional',
+            'CompTIA Security+ Certified',
+            'Security Operations · Log Analysis · SIEM',
+            'HIPAA · SOC 2 · Risk Management',
+            'HTB · TryHackMe · Homelab Enthusiast'
+        ];
+        let phraseIndex = 0;
+        let charIndex = 0;
+        let deleting = false;
+        const el = document.getElementById('typewriter');
+
+        function type() {
+            const current = phrases[phraseIndex];
+            if (!deleting) {
+                el.innerHTML = current.substring(0, charIndex + 1);
+                charIndex++;
+                if (charIndex === current.length) {
+                    deleting = true;
+                    setTimeout(type, 2200);
+                    return;
+                }
+            } else {
+                el.innerHTML = current.substring(0, charIndex - 1);
+                charIndex--;
+                if (charIndex === 0) {
+                    deleting = false;
+                    phraseIndex = (phraseIndex + 1) % phrases.length;
+                }
+            }
+            setTimeout(type, deleting ? 45 : 70);
+        }
+        setTimeout(type, 800);
+    </script>
 </body>
 </html>
 

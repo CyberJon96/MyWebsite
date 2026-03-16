@@ -2,19 +2,105 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Jonathan Rothe's Projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Jonathan Rothe</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="pictures/favicon.png" type="image/x-icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .project-card-icon {
+            width: 100%;
+            height: 160px;
+            background: #0d1829;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            border-bottom: 1px solid #1e2d45;
+        }
+
+        .project-card-meta {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 0.75rem;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+        }
+
+        .client-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            background: #0d2010;
+            border: 1px solid #166534;
+            color: #4ade80;
+            border-radius: 5px;
+            padding: 0.2rem 0.6rem;
+            font-size: 0.72rem;
+            font-family: 'Courier New', monospace;
+        }
+
+        .view-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            background: #0d1829;
+            border: 1px solid #00d4ff44;
+            color: #00d4ff;
+            border-radius: 5px;
+            padding: 0.2rem 0.6rem;
+            font-size: 0.72rem;
+            font-family: 'Courier New', monospace;
+            text-decoration: none;
+            transition: background 0.2s, border-color 0.2s;
+        }
+
+        .view-link:hover {
+            background: #00d4ff15;
+            border-color: #00d4ff;
+            text-decoration: none;
+            color: #00d4ff;
+        }
+
+        .project-card-body p {
+            font-size: 0.87rem;
+            color: #64748b;
+            margin-bottom: 0;
+            line-height: 1.6;
+        }
+
+        .project-card-body h3 {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Non-linked card still gets hover effect via wrapper */
+        .project-card-static {
+            background: #111827;
+            border: 1px solid #1e2d45;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: border-color 0.2s, box-shadow 0.2s;
+            display: block;
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .project-card-static:hover {
+            border-color: #00d4ff22;
+            box-shadow: 0 0 16px #00d4ff10;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Jonathan Rothe</h1>
+        <p class="tagline">Cybersecurity &amp; Compliance Professional</p>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="resume.html">My Resume</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
             </ul>
         </nav>
     </header>
@@ -65,7 +151,7 @@
     </main>
 
     <footer>
-        <p>Developed by Jonathan Rothe</p>
+        <p>// Jonathan Rothe · jonathan-rothe.com · Built by Jonathan Rothe</p>
     </footer>
 </body>
 </html>

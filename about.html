@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jonathan Rothe's Resume</title>
+    <title>About | Jonathan Rothe</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="pictures/favicon.png" type="image/x-icon">
 </head>
 <body>
     <header>
         <h1>Jonathan Rothe</h1>
+        <p class="tagline">Cybersecurity &amp; Compliance Professional</p>
         <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="resume.html">My Resume</a></li>
-        </ul>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -52,10 +54,102 @@
             </ul>
         </section>
 
+            <div class="card" style="max-width:780px;margin:0 auto 2rem;text-align:left;">
+                <p style="color:#e2e8f0;font-size:1.05rem;margin-bottom:1rem;">
+                    I'm a cybersecurity and compliance professional based in Omaha, NE — currently finishing a
+                    <strong style="color:#00d4ff;">B.S. in Applied Computing</strong> with double minors in
+                    Cybersecurity and Management Information Systems at the University of Nebraska at Omaha
+                    (GPA 3.7, Chancellor's List).
+                </p>
+                <p style="margin-bottom:1rem;">
+                    I hold both <strong style="color:#00d4ff;">CompTIA Security+</strong> (SY0-701, passed August 2025)
+                    and <strong style="color:#00d4ff;">CompTIA A+</strong> certifications, and I work daily in security
+                    operations, log analysis with Splunk, API security, and compliance frameworks like HIPAA and SOC 2.
+                </p>
+                <p style="margin-bottom:1rem;">
+                    Through my independent consulting practice on Upwork, I've supported small businesses and
+                    healthcare-adjacent startups with risk registers, vendor security reviews, HIPAA and SOC 2 readiness,
+                    and cybersecurity training content. I also rewrote the documentation for a major cybersecurity
+                    platform (under NDA) and have served as a SOC analyst using tools like Kaseya, RocketCyber,
+                    and Datto.
+                </p>
+                <p style="margin-bottom:1rem;">
+                    Day-to-day at Toast, I perform advanced log analysis in Splunk, validate OAuth/token-based
+                    authentication flows via Postman, triage API integration failures, and support security escalations
+                    — including one incident I uncovered that led to fundamental security controls being added for a
+                    third-party vendor.
+                </p>
+                <p>
+                    Outside of work, I run a multi-host homelab (Kali, Ubuntu Server, Windows Server) for hands-on
+                    security practice, solve CTF challenges daily on Hack The Box and TryHackMe, and experiment with
+                    local AI models for log parsing and automation. I'm also the cofounder and president of the UNO
+                    Mindfulness Club — 4+ years of building community and leading peer mentorship programs.
+                </p>
+            </div>
+        </section>
+
+        <!-- Focus Areas -->
+        <section>
+            <h2 class="section-title">Focus Areas</h2>
+            <div class="skills-grid">
+                <div class="card" style="text-align:left;">
+                    <h3>Security Operations &amp; Analysis</h3>
+                    <p style="margin-top:0.5rem;font-size:0.9rem;">
+                        Log analysis and incident triage in Splunk, anomaly detection, root-cause investigation,
+                        and fraud/risk escalation workflows.
+                    </p>
+                </div>
+                <div class="card" style="text-align:left;">
+                    <h3>Risk, Compliance &amp; GRC</h3>
+                    <p style="margin-top:0.5rem;font-size:0.9rem;">
+                        HIPAA and SOC 2 readiness, risk register development, vendor risk reviews, Vanta,
+                        control mapping, and tabletop exercises.
+                    </p>
+                </div>
+                <div class="card" style="text-align:left;">
+                    <h3>Penetration Testing &amp; Labs</h3>
+                    <p style="margin-top:0.5rem;font-size:0.9rem;">
+                        Daily HTB and TryHackMe practice. Homelab with network segmentation, host hardening,
+                        Kali Linux, Metasploit, Burp Suite, and custom monitoring.
+                    </p>
+                </div>
+                <div class="card" style="text-align:left;">
+                    <h3>API &amp; Application Security</h3>
+                    <p style="margin-top:0.5rem;font-size:0.9rem;">
+                        OAuth/token validation, OWASP Top 10 awareness, API integration troubleshooting,
+                        and data flow analysis using Postman and internal tooling.
+                    </p>
+                </div>
+                <div class="card" style="text-align:left;">
+                    <h3>Security Enablement &amp; Documentation</h3>
+                    <p style="margin-top:0.5rem;font-size:0.9rem;">
+                        LMS-based cybersecurity training development, platform documentation revamps,
+                        operational runbooks, and security awareness content for non-technical audiences.
+                    </p>
+                </div>
+                <div class="card" style="text-align:left;">
+                    <h3>Cloud &amp; Infrastructure</h3>
+                    <p style="margin-top:0.5rem;font-size:0.9rem;">
+                        AWS (EC2, S3, VPC, IAM), Docker, Windows Server, Active Directory, secure
+                        configuration, and access control hardening.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section>
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-links">
+                <a href="mailto:Jonathan.E.J.Rothe@gmail.com" class="contact-btn">✉ Jonathan.E.J.Rothe@gmail.com</a>
+                <a href="https://www.linkedin.com/in/jonathan-rothe-mindful-life/" target="_blank" class="contact-btn">↗ LinkedIn</a>
+                <a href="https://github.com/BuddhaJon" target="_blank" class="contact-btn">↗ GitHub</a>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <p>Developed by Jonathan Rothe</p>
+        <p>// Jonathan Rothe · jonathan-rothe.com · Built by Jonathan Rothe</p>
     </footer>
 </body>
 </html>
