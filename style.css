@@ -136,9 +136,9 @@ nav ul li a.active {
 /* ── Main Layout ── */
 main {
     flex: 1;
-    padding: 2rem clamp(1.5rem, 4vw, 5rem);
+    padding: 2rem clamp(1rem, 2.5vw, 3rem);
     padding-bottom: 4rem;
-    max-width: 1400px;
+    max-width: 1700px;
     margin: 0 auto;
     width: 100%;
     box-sizing: border-box;
@@ -725,13 +725,6 @@ footer {
 }
 
 /* ── Responsive ── */
-@media screen and (min-width: 1400px) {
-    main {
-        padding-left: clamp(2rem, 5vw, 7rem);
-        padding-right: clamp(2rem, 5vw, 7rem);
-    }
-}
-
 @media screen and (max-width: 768px) {
     main {
         padding: 1.5rem 1.25rem;
