@@ -107,45 +107,174 @@
 
     <main>
         <section class="projects-container">
-            <h2>Projects</h2>
-            <p>Here are some of my projects created throughout my education and professional exploration of technology. Each build highlights a different mix of web development, automation, cybersecurity, and user experience problem-solving.</p>
+            <h2 class="section-title">Projects &amp; Engagements</h2>
+            <p>
+                A selection of real cybersecurity consulting engagements, assessments, and lab work.
+                Client deliverables are shown in summary only; sensitive details have been redacted
+                or withheld per engagement agreements.
+            </p>
 
-            <div class="project-list">
-                <article class="project-card">
-                    <img src="pictures/personalFinance.png" alt="Personal Finance dashboard screenshot" class="project-image">
-                    <div class="project-content">
-                        <h3>Personal Finance Toolkit</h3>
-                        <p>A budgeting suite with calculators, dynamic charting, and workflow automation to simplify money management.</p>
-                        <a class="project-link" href="personal-finance.html">Open Personal Finance Tools</a>
-                    </div>
-                </article>
+            <div class="projects-grid">
 
-                <article class="project-card">
-                    <img src="pictures/game.png" alt="Stress Relief Simulator gameplay" class="project-image">
-                    <div class="project-content">
-                        <h3>Stress Relief Simulator</h3>
-                        <p>A playful, physics-driven browser game designed to explore user interaction, animation, and lightweight game loops.</p>
-                        <a class="project-link" href="video-game.html">Launch Stress Relief Simulator</a>
+                <!-- Vulnerability Assessment -->
+                <div class="project-card-static">
+                    <div class="project-card-icon">🔍</div>
+                    <div class="project-card-body">
+                        <h3>Personal Vulnerability Assessment</h3>
+                        <p>
+                            Comprehensive OSINT and security assessment for an individual client: digital
+                            footprint analysis, data breach lookups (HIBP), data broker exposure, social
+                            media risk, network and device hardening recommendations, and a full risk summary.
+                        </p>
+                        <div class="project-card-meta">
+                            <div>
+                                <span class="project-tag">OSINT</span>
+                                <span class="project-tag">HIBP</span>
+                                <span class="project-tag">Risk Assessment</span>
+                                <span class="project-tag">Hardening</span>
+                            </div>
+                            <a href="files/Vulnerability Assessment.pdf" target="_blank" class="view-link">↗ View Report</a>
+                        </div>
                     </div>
-                </article>
+                </div>
 
-                <article class="project-card">
-                    <img src="pictures/cybersecurity-test.png" alt="Cybersecurity quiz interface" class="project-image">
-                    <div class="project-content">
-                        <h3>Cybersecurity Knowledge Test</h3>
-                        <p>An interactive quiz that reinforces core security concepts while demonstrating form logic and responsive layouts.</p>
-                        <a class="project-link" href="cybersecurity-test.html">Try the Cybersecurity Test</a>
+                <!-- Cybersecurity Training Material -->
+                <div class="project-card-static">
+                    <div class="project-card-icon">📋</div>
+                    <div class="project-card-body">
+                        <h3>Cybersecurity Training Material</h3>
+                        <p>
+                            Phishing awareness training slides developed for a corporate client (ThinkCyberIT).
+                            Covers website security warnings, social engineering red flags, suspicious links
+                            and forms, and actionable guidance tailored for non-technical staff.
+                        </p>
+                        <div class="project-card-meta">
+                            <div>
+                                <span class="project-tag">Phishing</span>
+                                <span class="project-tag">Security Awareness</span>
+                                <span class="project-tag">LMS Content</span>
+                            </div>
+                            <span class="client-badge">✓ Client Engagement</span>
+                        </div>
                     </div>
-                </article>
+                </div>
 
-                <article class="project-card">
-                    <img src="ragdoll-game.png" alt="Cybersecurity escape room game" class="project-image">
-                    <div class="project-content">
-                        <h3>Cybersecurity Escape Room</h3>
-                        <p>A canvas-powered puzzle experience focusing on threat hunting, phishing analysis, and investigative play.</p>
-                        <a class="project-link" href="cybersecurity-game.html">Play the Escape Room</a>
+                <!-- Risk Analysis with Risk Register -->
+                <div class="project-card-static">
+                    <div class="project-card-icon">📊</div>
+                    <div class="project-card-body">
+                        <h3>Risk Analysis &amp; Risk Register</h3>
+                        <p>
+                            Full security risk assessment and risk register for a client's MCP server
+                            environment. Includes executive summary, scope and environment definition,
+                            findings prioritization, and remediation tracking aligned to SOC 2 controls.
+                        </p>
+                        <div class="project-card-meta">
+                            <div>
+                                <span class="project-tag">Risk Register</span>
+                                <span class="project-tag">SOC 2</span>
+                                <span class="project-tag">GRC</span>
+                                <span class="project-tag">Vanta</span>
+                            </div>
+                            <span class="client-badge">✓ Client Engagement</span>
+                        </div>
                     </div>
-                </article>
+                </div>
+
+                <!-- Splunk SIEM -->
+                <div class="project-card-static">
+                    <div class="project-card-icon">📡</div>
+                    <div class="project-card-body">
+                        <h3>Log Analysis &amp; Splunk SIEM</h3>
+                        <p>
+                            Splunk SIEM environment built for real-time log analysis and anomaly detection.
+                            Configured forwarders from multiple hosts, custom dashboards with KPI panels,
+                            correlation searches, and alert rules surfacing suspicious activity for triage.
+                        </p>
+                        <div class="project-card-meta">
+                            <div>
+                                <span class="project-tag">Splunk</span>
+                                <span class="project-tag">SIEM</span>
+                                <span class="project-tag">Log Analysis</span>
+                                <span class="project-tag">Alerting</span>
+                            </div>
+                            <span class="client-badge">✓ Lab / Client Work</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SOC Analyst -->
+                <div class="project-card-static">
+                    <div class="project-card-icon">🖥️</div>
+                    <div class="project-card-body">
+                        <h3>SOC Analyst — Managed Security Services</h3>
+                        <p>
+                            Performed SOC analyst duties for multiple small business clients via Upwork.
+                            Monitored endpoints, investigated alerts, and triaged incidents using Kaseya
+                            tooling (RocketCyber, SAAS Alerts, Datto, Inky, ConnectWise). Escalated
+                            confirmed threats and documented findings in client-facing reports.
+                        </p>
+                        <div class="project-card-meta">
+                            <div>
+                                <span class="project-tag">SOC</span>
+                                <span class="project-tag">RocketCyber</span>
+                                <span class="project-tag">Kaseya</span>
+                                <span class="project-tag">Incident Response</span>
+                                <span class="project-tag">ConnectWise</span>
+                            </div>
+                            <span class="client-badge">✓ Client Engagement</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HIPAA & SOC 2 Compliance -->
+                <div class="project-card-static">
+                    <div class="project-card-icon">🔒</div>
+                    <div class="project-card-body">
+                        <h3>HIPAA &amp; SOC 2 Compliance Readiness</h3>
+                        <p>
+                            Supported multiple clients through HIPAA and SOC 2 readiness engagements via
+                            Upwork. Work included risk register development, vendor risk reviews, policy
+                            analysis, evidence collection in Vanta, control mapping, and drafting
+                            compliance-ready Tabletop Exercises and Incident Response plans.
+                        </p>
+                        <div class="project-card-meta">
+                            <div>
+                                <span class="project-tag">HIPAA</span>
+                                <span class="project-tag">SOC 2</span>
+                                <span class="project-tag">Vanta</span>
+                                <span class="project-tag">GRC</span>
+                                <span class="project-tag">Tabletop Exercises</span>
+                            </div>
+                            <span class="client-badge">✓ Client Engagement</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cybersecurity Platform Docs Revamp -->
+                <div class="project-card-static">
+                    <div class="project-card-icon">📝</div>
+                    <div class="project-card-body">
+                        <h3>Cybersecurity Platform Documentation Revamp</h3>
+                        <p>
+                            Rewrote and restructured the full documentation suite for a cybersecurity
+                            platform under NDA. Delivered clear, professional technical documentation
+                            including workflow guides, operational runbooks, and dashboard references
+                            — translated complex security tooling into accessible content for both
+                            technical and non-technical audiences.
+                        </p>
+                        <div class="project-card-meta">
+                            <div>
+                                <span class="project-tag">Technical Writing</span>
+                                <span class="project-tag">Runbooks</span>
+                                <span class="project-tag">Security Platform</span>
+                                <span class="project-tag">NDA</span>
+                            </div>
+                            <span class="client-badge">✓ Client Engagement</span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
     </main>
