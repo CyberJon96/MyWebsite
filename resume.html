@@ -3,109 +3,334 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jonathan Rothe's Resume</title>
+    <title>Resume | Jonathan Rothe</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="pictures/favicon.png" type="image/x-icon">
 </head>
 <body>
     <header>
         <h1>Jonathan Rothe</h1>
+        <p class="tagline">Cybersecurity &amp; Compliance Professional</p>
         <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="projects.html">Projects</a></li>
-        </ul>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html" class="active">Resume</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
-        <h2>
-            <p>Email: <a href="mailto:Jonathan.E.J.Rothe@gmail.com">Jonathan.E.J.Rothe@gmail.com</a></p>
-            <p>Phone: 402-516-4633</p>
-            <p>Website: <a href="https://jonathan-rothe.com">Jonathan-Rothe.com</a></p>
-        </h2>
-        
-        <section id="education">
-            <h2>Education</h2>
-            <p><strong>University of Nebraska at Omaha</strong> - Bachelor of Science in IT Innovation (Minor in Management Information Systems)</p>
-            <p>GPA: 3.5/4.0</p>
-            <p>Dean’s List Awardee in the Fall of 2020 and 2022</p>
-            <p>Cofounder and President of UNO Mindfulness Club for 4+ years</p>
-            <h3>Relevant Coursework:</h3>
-            <p>Coding with Python, SQL, R, C, Java, HTML, JavaScript, and CSS</p>
-            <p>Built and deployed a website using Python, HTML, CSS, and Django as a team</p>
-            <p>Linux and cybersecurity experience through related coursework</p>
-            <p>Focused coursework on IT project development and management</p>
-            <br>
-            <p><strong>Metropolitan Community College</strong> - Associate’s Degree in Applied Sciences (Graduated 2018)</p>
-        </section>
 
-        <section id="experience">
-            <h2>Work Experience</h2>
-            <div>
-                <h3>Toast: Employee Cloud Support Specialist I and II</h3>
-                <p><i>November 2023 – Present</i></p>
-                    <li>Technical support for Toast’s employee management software</li>
-                    <li>Quickly promoted to Specialist II after six months</li>
-                    <li>Became highly proficient with the software and processes</li>
-                </ul>
-            </div>
-            <div>
-                <h3>Salute Mission Critical: Data Center Security Officer</h3>
-                <p><i>May 2023 – October 2023</i></p>
-                    <li>Provided security for the construction of a Google data center</li>
-                    <li>Monitored and safeguarded the physical infrastructure</li>
-                </ul>
-            </div>
-            <div>
-                <h3>Catholic Health Initiatives: Hospital Security Officer</h3>
-                <p><i>December 2021 – May 2023</i></p>
-                    <li>Provided security at area hospitals including psych/behavioral units</li>
-                    <li>Completed law enforcement-level CPI de-escalation training</li>
-                    <li>Skillfully de-escalated intense and dangerous scenarios</li>
-                </ul>
-            </div>
-            <div>
-                <h3>Clark International: Corporate Security Guard</h3>
-                <p><i>September 2019 – December 2021</i></p>
-                    <li>Protected personnel and property at corporate locations</li>
-                    <li>Utilized software to control access and monitor camera feeds</li>
-                </ul>
+        <!-- Contact Bar -->
+        <div class="card" style="max-width:780px;margin:0 auto 2rem;text-align:center;padding:1rem;">
+            <span style="color:#94a3b8;font-size:0.9rem;">
+                <a href="mailto:Jonathan.E.J.Rothe@gmail.com">Jonathan.E.J.Rothe@gmail.com</a>
+                &nbsp;·&nbsp; (402) 516-4633
+                &nbsp;·&nbsp; <a href="https://jonathan-rothe.com">Jonathan-Rothe.com</a>
+                &nbsp;·&nbsp; Omaha, NE
+            </span>
+        </div>
+
+        <!-- Professional Summary -->
+        <section style="max-width:780px;margin:0 auto;">
+            <h2 class="section-title">Professional Summary</h2>
+            <div class="card" style="text-align:left;">
+                <p style="color:#cbd5e1;">
+                    Practical, hands-on cybersecurity and compliance professional with a B.S. in Applied Computing
+                    and a Cybersecurity + MIS double-minor. Experience supporting security operations, compliance
+                    readiness, and platform maturity across SaaS and healthcare-adjacent environments. Proven
+                    background in log analysis and incident triage using Splunk, API and authentication
+                    troubleshooting, and risk-based security reviews of systems handling sensitive data.
+                </p>
+                <p style="color:#cbd5e1;margin-top:0.75rem;">
+                    Active independent consultant delivering HIPAA and SOC 2 readiness support, risk registers,
+                    vendor reviews, cybersecurity training content, and security platform documentation revamps.
+                    Strong technical communicator with experience translating complex security concepts into
+                    clear documentation and actionable guidance for technical and non-technical stakeholders.
+                </p>
             </div>
         </section>
 
-        <section id="skills">
-            <h2>Skills</h2>
-                <li>Advanced skills in MacOS and Windows; foundational skills in Linux</li>
-                <li>Developed and deployed multiple websites, including personal site</li>
-                <li>Proficient in proprietary software and fast-paced tech environments</li>
-                <li>Familiar with Salesforce for ticketing and customer support</li>
-                <li>Built and upgraded home PC and laptop multiple times</li>
-                <li>Constructed and maintain a smart home environment with lights, speakers, switches, plugs, thermostat, and smart lock</li>
-                <li>Excellent verbal and written communication skills</li>
+        <!-- Certifications -->
+        <section style="max-width:780px;margin:2rem auto 0;">
+            <h2 class="section-title">Certifications</h2>
+            <div style="display:flex;flex-direction:column;gap:0.75rem;">
+                <div class="cert-card">
+                    <div class="cert-icon">🛡️</div>
+                    <div>
+                        <h3>CompTIA Security+ (SY0-701)</h3>
+                        <p>Passed August 11, 2025 — First Attempt &nbsp;|&nbsp; Expires August 11, 2028</p>
+                        <p>Candidate ID: COMP001022322378 &nbsp;|&nbsp; Code: E31KE9NYW141KWT2</p>
+                        <a class="cert-verify" href="http://verify.CompTIA.org" target="_blank">✓ Verify at verify.CompTIA.org</a>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">💻</div>
+                    <div>
+                        <h3>CompTIA A+ (Core 1101 &amp; 1102)</h3>
+                        <p>Renewed August 2025 — First Attempt &nbsp;|&nbsp; Expires November 17, 2026</p>
+                        <p>Candidate ID: COMP001022322378 &nbsp;|&nbsp; Code: NB4V96RT221112KZ</p>
+                        <a class="cert-verify" href="http://verify.CompTIA.org" target="_blank">✓ Verify at verify.CompTIA.org</a>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top:1rem;">
+                <img src="pictures/CompTIA Security+ Certificate.png" alt="CompTIA Security+ Certification"
+                     class="responsive-image" style="max-width:600px;">
+            </div>
         </section>
 
-        <section id="download">
-            <h2>Download Resume</h2>
-            <button onclick="window.location.href='files/IT Resume.pdf'" class="download-button">Download Resume PDF</button>
-            <br>
+        <!-- Download -->
+        <section id="download" style="max-width:780px;margin:0 auto;">
+            <button onclick="window.location.href='files/Cybersecurity Resume.pdf'" class="download-button">
+                ↓ Download Resume PDF
+            </button>
         </section>
 
-        <section id="certificate">
-            <h2>CompTIA A+ Certification</h2>
-            <p>Certificate Number: COMP001022322378</p>
-            <p>Code: NB4V96RT221112KZ</p>
-            <p>Issued: November 17, 2023</p>
-            <p>Valid Through: November 17, 2026</p>
-            <p>Verify at: <a href="http://verify.CompTIA.org">http://verify.CompTIA.org</a></p>
+        <!-- Experience -->
+        <section style="max-width:780px;margin:0 auto;">
+            <h2 class="section-title">Experience</h2>
 
-            <img src="pictures/CompTIA A+ Certificate.png" alt="CompTIA A+ Certification" class="responsive-image">
+            <div class="timeline-entry">
+                <h3>Independent IT, Cybersecurity &amp; Compliance Consultant</h3>
+                <span class="org">Upwork — Self-Employed</span>
+                <p class="date">2024 – Present</p>
+                <ul>
+                    <li>Support HIPAA and SOC 2 readiness: risk register development, vendor risk review, policy analysis, and compliance documentation using Vanta</li>
+                    <li>Conduct security reviews of systems handling sensitive data, focusing on access control, logging, device security, and administrative safeguards</li>
+                    <li>Provide vulnerability and risk assessments, account and device hardening under disclosure-restricted engagements</li>
+                    <li>Rewrote cybersecurity platform documentation (NDA) and created LMS-based security training materials for corporate clients</li>
+                    <li>Drafted compliance-ready Tabletop Exercises and Risk Registers; served as SOC analyst using Kaseya, RocketCyber, Datto, Inky, and Connectwise</li>
+                    <li>Microsoft cloud work: Entra, Azure, Intune, Defender, O365</li>
+                </ul>
+            </div>
+
+            <div class="timeline-entry">
+                <h3>API Integrations Expert (Tier III) — Technical Support Progression</h3>
+                <span class="org">Toast — Cloud Restaurant Technology Platform</span>
+                <p class="date">November 2023 – Present</p>
+                <ul>
+                    <li>Perform advanced troubleshooting of cloud and API-driven systems using structured log analysis (Splunk, audit logs, JSON event data) to identify anomalies, failures, and potential security issues</li>
+                    <li>Validate API endpoints, authentication flows, OAuth/token behavior, and data mappings using Postman and internal tooling</li>
+                    <li>Uncovered and escalated a security incident in Splunk logs to the highest levels of the security team — resulted in fundamental security controls being added for a third-party vendor</li>
+                    <li>Support payment processing and sensitive data workflows; strong familiarity with least privilege, auditability, and operational security</li>
+                    <li>Collaborate with partner developers, internal engineers, and risk teams to resolve integration failures and improve security posture</li>
+                    <li>Progression: Cloud Support Specialist (Tier I) → Payment Software Support Expert (Tier II) → API Integrations Expert</li>
+                </ul>
+            </div>
+
+            <div class="timeline-entry">
+                <h3>Data Center Security Officer</h3>
+                <span class="org">Salute Mission Critical — Google Data Center</span>
+                <p class="date">May 2023 – October 2023</p>
+                <ul>
+                    <li>Provided physical security for a Google data center; monitored and protected physical infrastructure</li>
+                    <li>Collaborated with internal teams for strict access control enforcement</li>
+                </ul>
+            </div>
+
+            <div class="timeline-entry">
+                <h3>Hospital Security Officer</h3>
+                <span class="org">Catholic Health Initiatives</span>
+                <p class="date">December 2021 – May 2023</p>
+                <ul>
+                    <li>Provided security at multiple area hospitals including psychiatric/behavioral units</li>
+                    <li>Completed CPI de-escalation training; handled high-stress incidents with professional communication</li>
+                </ul>
+            </div>
+
+            <div class="timeline-entry">
+                <h3>Corporate Security Guard</h3>
+                <span class="org">Clark International</span>
+                <p class="date">September 2019 – December 2021</p>
+                <ul>
+                    <li>Protected personnel and property at corporate customer locations</li>
+                    <li>Monitored and controlled physical access using security software suites and camera systems</li>
+                </ul>
+            </div>
         </section>
+
+        <!-- Projects & Labs -->
+        <section style="max-width:780px;margin:0 auto;">
+            <h2 class="section-title">Projects &amp; Labs</h2>
+            <div style="display:flex;flex-direction:column;gap:0.75rem;">
+                <div class="card" style="text-align:left;">
+                    <h3 style="color:#e2e8f0;font-size:1rem;text-align:left;">Homelab &amp; Cloud Security Lab</h3>
+                    <p style="font-size:0.9rem;margin-top:0.3rem;">Built and hardened a multi-host homelab with Kali, Ubuntu Server, and Windows Server. Implemented network segmentation, host hardening, Splunk forwarders, and custom monitoring dashboards.</p>
+                </div>
+                <div class="card" style="text-align:left;">
+                    <h3 style="color:#e2e8f0;font-size:1rem;text-align:left;">HTB &amp; TryHackMe Practice</h3>
+                    <p style="font-size:0.9rem;margin-top:0.3rem;">Daily hands-on challenge solving with security tooling: Nmap, Gobuster, Hydra, SQLMap, Metasploit, Burp Suite, John the Ripper, shells (reverse/bind), OWASP Top 10, and more.</p>
+                </div>
+                <div class="card" style="text-align:left;">
+                    <h3 style="color:#e2e8f0;font-size:1rem;text-align:left;">Splunk Lab</h3>
+                    <p style="font-size:0.9rem;margin-top:0.3rem;">Configured Splunk forwarders from VMs, created custom dashboards and alerts to surface anomalies and support investigative workflows.</p>
+                </div>
+                <div class="card" style="text-align:left;">
+                    <h3 style="color:#e2e8f0;font-size:1rem;text-align:left;">Full-Stack Web &amp; API Deployment</h3>
+                    <p style="font-size:0.9rem;margin-top:0.3rem;">Developed and deployed multiple front and back end websites and applications; integrated third-party APIs and built automated tests. Portfolio projects include a Security+ practice exam and a cybersecurity escape room game.</p>
+                </div>
+                <div class="card" style="text-align:left;">
+                    <h3 style="color:#e2e8f0;font-size:1rem;text-align:left;">Local LLM &amp; AI Security Tooling</h3>
+                    <p style="font-size:0.9rem;margin-top:0.3rem;">Deployed local models with Ollama and LMStudio; experimented with AI for log parsing, automation, and security research assistance.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section style="max-width:780px;margin:0 auto;">
+            <h2 class="section-title">Education</h2>
+
+            <div class="timeline-entry">
+                <h3>B.S. Applied Computing</h3>
+                <span class="org">University of Nebraska at Omaha</span>
+                <p class="date">Graduating Spring 2026 &nbsp;|&nbsp; GPA: 3.7 / 4.0</p>
+                <ul>
+                    <li>Minors: Cybersecurity &amp; Management Information Systems</li>
+                    <li>Dean's List: Fall 2020, 2022, 2024, 2025 &nbsp;|&nbsp; Chancellor's List: Fall 2025</li>
+                    <li>Coursework: Network Security, Ethical Hacking, Cybersecurity Policy &amp; Risk Management, Secure Systems Design, Linux &amp; Windows Administration, Full Stack Development, AWS</li>
+                    <li>Cofounder &amp; President, UNO Mindfulness Club (4+ years)</li>
+                </ul>
+            </div>
+
+            <div class="timeline-entry">
+                <h3>A.A.S. Applied Sciences</h3>
+                <span class="org">Metropolitan Community College</span>
+                <p class="date">Graduated 2018</p>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section style="max-width:780px;margin:0 auto;">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid" style="text-align:left;">
+
+                <div class="card skill-category">
+                    <h3>Security Operations &amp; Monitoring</h3>
+                    <div class="badge-grid">
+                        <span class="badge">Splunk</span>
+                        <span class="badge">Log Analysis</span>
+                        <span class="badge">Incident Triage</span>
+                        <span class="badge">Anomaly Detection</span>
+                        <span class="badge">Audit Logs</span>
+                        <span class="badge">ProcMon</span>
+                        <span class="badge">TCPView</span>
+                    </div>
+                </div>
+
+                <div class="card skill-category">
+                    <h3>Risk, Compliance &amp; GRC</h3>
+                    <div class="badge-grid">
+                        <span class="badge">HIPAA</span>
+                        <span class="badge">SOC 2</span>
+                        <span class="badge">Vanta</span>
+                        <span class="badge">Risk Registers</span>
+                        <span class="badge">Vendor Reviews</span>
+                        <span class="badge">Tabletop Exercises</span>
+                        <span class="badge">Control Mapping</span>
+                    </div>
+                </div>
+
+                <div class="card skill-category">
+                    <h3>Security Tooling &amp; Pen Testing</h3>
+                    <div class="badge-grid">
+                        <span class="badge">Kali Linux</span>
+                        <span class="badge">Metasploit</span>
+                        <span class="badge">Burp Suite</span>
+                        <span class="badge">Nmap</span>
+                        <span class="badge">Wireshark</span>
+                        <span class="badge">Gobuster</span>
+                        <span class="badge">Hydra</span>
+                        <span class="badge">SQLMap</span>
+                        <span class="badge">John the Ripper</span>
+                    </div>
+                </div>
+
+                <div class="card skill-category">
+                    <h3>Networking &amp; Traffic Analysis</h3>
+                    <div class="badge-grid">
+                        <span class="badge">TCP/IP</span>
+                        <span class="badge">Subnetting</span>
+                        <span class="badge">Wireshark</span>
+                        <span class="badge">tcpdump</span>
+                        <span class="badge">Nmap</span>
+                        <span class="badge">OSI Model</span>
+                        <span class="badge">NetFlow</span>
+                    </div>
+                </div>
+
+                <div class="card skill-category">
+                    <h3>Cloud &amp; Infrastructure</h3>
+                    <div class="badge-grid">
+                        <span class="badge">AWS (EC2, S3, VPC, IAM)</span>
+                        <span class="badge">Docker</span>
+                        <span class="badge">Windows Server</span>
+                        <span class="badge">Active Directory</span>
+                        <span class="badge">Hyper-V</span>
+                        <span class="badge">Linux Admin</span>
+                        <span class="badge">Ubuntu Server</span>
+                    </div>
+                </div>
+
+                <div class="card skill-category">
+                    <h3>API &amp; Application Security</h3>
+                    <div class="badge-grid">
+                        <span class="badge">Postman</span>
+                        <span class="badge">OAuth / JWT</span>
+                        <span class="badge">OWASP Top 10</span>
+                        <span class="badge">API Troubleshooting</span>
+                        <span class="badge">Data Flow Analysis</span>
+                        <span class="badge">SQLi / XSS / CSRF</span>
+                    </div>
+                </div>
+
+                <div class="card skill-category">
+                    <h3>Scripting &amp; Automation</h3>
+                    <div class="badge-grid">
+                        <span class="badge">Python</span>
+                        <span class="badge">PowerShell</span>
+                        <span class="badge">Bash</span>
+                        <span class="badge">SQL</span>
+                        <span class="badge">Regex</span>
+                    </div>
+                </div>
+
+                <div class="card skill-category">
+                    <h3>Platforms &amp; Collaboration</h3>
+                    <div class="badge-grid">
+                        <span class="badge">Confluence</span>
+                        <span class="badge">Jira</span>
+                        <span class="badge">Slack</span>
+                        <span class="badge">Salesforce</span>
+                        <span class="badge">Git</span>
+                        <span class="badge">VS Code</span>
+                        <span class="badge">Kaseya</span>
+                        <span class="badge">RocketCyber</span>
+                        <span class="badge">Datto</span>
+                    </div>
+                </div>
+
+                <div class="card skill-category">
+                    <h3>Microsoft Cloud</h3>
+                    <div class="badge-grid">
+                        <span class="badge">Entra ID</span>
+                        <span class="badge">Azure</span>
+                        <span class="badge">Intune</span>
+                        <span class="badge">Defender</span>
+                        <span class="badge">Office 365</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
     </main>
 
     <footer>
-        <p>Developed by Jonathan Rothe</p>
+        <p>// Jonathan Rothe · jonathan-rothe.com · Built by Jonathan Rothe</p>
     </footer>
 </body>
 </html>

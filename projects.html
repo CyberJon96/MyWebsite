@@ -2,57 +2,285 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Jonathan Rothe's Projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Jonathan Rothe</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="pictures/favicon.png" type="image/x-icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .project-card-icon {
+            width: 100%;
+            height: 160px;
+            background: #0d1829;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            border-bottom: 1px solid #1e2d45;
+        }
+
+        .project-card-meta {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 0.75rem;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+        }
+
+        .client-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            background: #0d2010;
+            border: 1px solid #166534;
+            color: #4ade80;
+            border-radius: 5px;
+            padding: 0.2rem 0.6rem;
+            font-size: 0.72rem;
+            font-family: 'Courier New', monospace;
+        }
+
+        .view-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            background: #0d1829;
+            border: 1px solid #00d4ff44;
+            color: #00d4ff;
+            border-radius: 5px;
+            padding: 0.2rem 0.6rem;
+            font-size: 0.72rem;
+            font-family: 'Courier New', monospace;
+            text-decoration: none;
+            transition: background 0.2s, border-color 0.2s;
+        }
+
+        .view-link:hover {
+            background: #00d4ff15;
+            border-color: #00d4ff;
+            text-decoration: none;
+            color: #00d4ff;
+        }
+
+        .project-card-body p {
+            font-size: 0.87rem;
+            color: #64748b;
+            margin-bottom: 0;
+            line-height: 1.6;
+        }
+
+        .project-card-body h3 {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Non-linked card still gets hover effect via wrapper */
+        .project-card-static {
+            background: #111827;
+            border: 1px solid #1e2d45;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: border-color 0.2s, box-shadow 0.2s;
+            display: block;
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .project-card-static:hover {
+            border-color: #00d4ff22;
+            box-shadow: 0 0 16px #00d4ff10;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Jonathan Rothe</h1>
+        <p class="tagline">Cybersecurity &amp; Compliance Professional</p>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="resume.html">My Resume</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section class="projects-container">
-            <h2>Projects</h2>
-            <p>Here are some of my projects that I have created in the course of my education and professional interest in technology. These projects particularly emphasize my skills in coding, web development, cybersecurity, and innovation in the technical field.</p>
-<br>
-            <!-- Project buttons as links -->
-            <div class="project-buttons">
-                <a href="personal-finance.html" class="green">Personal Finance</a>
-                <a href="video-game.html" class="red">Stress Relief Simulator</a>
-                <a href="cybersecurity-test.html" class="yellow">Cybersecurity Test</a>
-                <a href="cybersecurity-game.html" class="blue">Cybersecurity Game</a>
+            <h2 class="section-title">Projects &amp; Engagements</h2>
+            <p>
+                A selection of real cybersecurity consulting engagements, assessments, and lab work.
+                Client deliverables are shown in summary only; sensitive details have been redacted
+                or withheld per engagement agreements.
+            </p>
 
-            </div>
+            <div class="projects-grid">
 
-            <!-- Project images -->
-            <div class="project-images">
-                <div class="image">
-                    <img src="pictures/personalFinance.png" alt="Personal Finance">
+                <!-- Vulnerability Assessment -->
+                <div class="project-card-static">
+                    <div class="project-card-icon">🔍</div>
+                    <div class="project-card-body">
+                        <h3>Personal Vulnerability Assessment</h3>
+                        <p>
+                            Comprehensive OSINT and security assessment for an individual client: digital
+                            footprint analysis, data breach lookups (HIBP), data broker exposure, social
+                            media risk, network and device hardening recommendations, and a full risk summary.
+                        </p>
+                        <div class="project-card-meta">
+                            <div>
+                                <span class="project-tag">OSINT</span>
+                                <span class="project-tag">HIBP</span>
+                                <span class="project-tag">Risk Assessment</span>
+                                <span class="project-tag">Hardening</span>
+                            </div>
+                            <a href="files/Vulnerability Assessment.pdf" target="_blank" class="view-link">↗ View Report</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="image">
-                    <img src="pictures/game.png" alt="Stress Relief Simulator">
+
+                <!-- Cybersecurity Training Material -->
+                <div class="project-card-static">
+                    <div class="project-card-icon">📋</div>
+                    <div class="project-card-body">
+                        <h3>Cybersecurity Training Material</h3>
+                        <p>
+                            Phishing awareness training slides developed for a corporate client (ThinkCyberIT).
+                            Covers website security warnings, social engineering red flags, suspicious links
+                            and forms, and actionable guidance tailored for non-technical staff.
+                        </p>
+                        <div class="project-card-meta">
+                            <div>
+                                <span class="project-tag">Phishing</span>
+                                <span class="project-tag">Security Awareness</span>
+                                <span class="project-tag">LMS Content</span>
+                            </div>
+                            <span class="client-badge">✓ Client Engagement</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="image">
-                    <img src="pictures/cybersecurity-test.png" alt="Cybersecurity Test">
+
+                <!-- Risk Analysis with Risk Register -->
+                <div class="project-card-static">
+                    <div class="project-card-icon">📊</div>
+                    <div class="project-card-body">
+                        <h3>Risk Analysis &amp; Risk Register</h3>
+                        <p>
+                            Full security risk assessment and risk register for a client's MCP server
+                            environment. Includes executive summary, scope and environment definition,
+                            findings prioritization, and remediation tracking aligned to SOC 2 controls.
+                        </p>
+                        <div class="project-card-meta">
+                            <div>
+                                <span class="project-tag">Risk Register</span>
+                                <span class="project-tag">SOC 2</span>
+                                <span class="project-tag">GRC</span>
+                                <span class="project-tag">Vanta</span>
+                            </div>
+                            <span class="client-badge">✓ Client Engagement</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="image">
-                    <img src="ragdoll-game.png" alt="Ragdoll Game">
+
+                <!-- Splunk SIEM -->
+                <div class="project-card-static">
+                    <div class="project-card-icon">📡</div>
+                    <div class="project-card-body">
+                        <h3>Log Analysis &amp; Splunk SIEM</h3>
+                        <p>
+                            Splunk SIEM environment built for real-time log analysis and anomaly detection.
+                            Configured forwarders from multiple hosts, custom dashboards with KPI panels,
+                            correlation searches, and alert rules surfacing suspicious activity for triage.
+                        </p>
+                        <div class="project-card-meta">
+                            <div>
+                                <span class="project-tag">Splunk</span>
+                                <span class="project-tag">SIEM</span>
+                                <span class="project-tag">Log Analysis</span>
+                                <span class="project-tag">Alerting</span>
+                            </div>
+                            <span class="client-badge">✓ Lab / Client Work</span>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- SOC Analyst -->
+                <div class="project-card-static">
+                    <div class="project-card-icon">🖥️</div>
+                    <div class="project-card-body">
+                        <h3>SOC Analyst — Managed Security Services</h3>
+                        <p>
+                            Performed SOC analyst duties for multiple small business clients via Upwork.
+                            Monitored endpoints, investigated alerts, and triaged incidents using Kaseya
+                            tooling (RocketCyber, SAAS Alerts, Datto, Inky, ConnectWise). Escalated
+                            confirmed threats and documented findings in client-facing reports.
+                        </p>
+                        <div class="project-card-meta">
+                            <div>
+                                <span class="project-tag">SOC</span>
+                                <span class="project-tag">RocketCyber</span>
+                                <span class="project-tag">Kaseya</span>
+                                <span class="project-tag">Incident Response</span>
+                                <span class="project-tag">ConnectWise</span>
+                            </div>
+                            <span class="client-badge">✓ Client Engagement</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HIPAA & SOC 2 Compliance -->
+                <div class="project-card-static">
+                    <div class="project-card-icon">🔒</div>
+                    <div class="project-card-body">
+                        <h3>HIPAA &amp; SOC 2 Compliance Readiness</h3>
+                        <p>
+                            Supported multiple clients through HIPAA and SOC 2 readiness engagements via
+                            Upwork. Work included risk register development, vendor risk reviews, policy
+                            analysis, evidence collection in Vanta, control mapping, and drafting
+                            compliance-ready Tabletop Exercises and Incident Response plans.
+                        </p>
+                        <div class="project-card-meta">
+                            <div>
+                                <span class="project-tag">HIPAA</span>
+                                <span class="project-tag">SOC 2</span>
+                                <span class="project-tag">Vanta</span>
+                                <span class="project-tag">GRC</span>
+                                <span class="project-tag">Tabletop Exercises</span>
+                            </div>
+                            <span class="client-badge">✓ Client Engagement</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cybersecurity Platform Docs Revamp -->
+                <div class="project-card-static">
+                    <div class="project-card-icon">📝</div>
+                    <div class="project-card-body">
+                        <h3>Cybersecurity Platform Documentation Revamp</h3>
+                        <p>
+                            Rewrote and restructured the full documentation suite for a cybersecurity
+                            platform under NDA. Delivered clear, professional technical documentation
+                            including workflow guides, operational runbooks, and dashboard references
+                            — translated complex security tooling into accessible content for both
+                            technical and non-technical audiences.
+                        </p>
+                        <div class="project-card-meta">
+                            <div>
+                                <span class="project-tag">Technical Writing</span>
+                                <span class="project-tag">Runbooks</span>
+                                <span class="project-tag">Security Platform</span>
+                                <span class="project-tag">NDA</span>
+                            </div>
+                            <span class="client-badge">✓ Client Engagement</span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
     </main>
 
     <footer>
-        <p>Developed by Jonathan Rothe</p>
+        <p>// Jonathan Rothe · jonathan-rothe.com · Built by Jonathan Rothe</p>
     </footer>
 </body>
 </html>
