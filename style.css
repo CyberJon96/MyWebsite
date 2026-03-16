@@ -136,11 +136,12 @@ nav ul li a.active {
 /* ── Main Layout ── */
 main {
     flex: 1;
-    padding: 2rem 10%;
+    padding: 2rem clamp(1.5rem, 4vw, 5rem);
     padding-bottom: 4rem;
-    max-width: 1100px;
+    max-width: 1400px;
     margin: 0 auto;
     width: 100%;
+    box-sizing: border-box;
 }
 
 section {
@@ -469,9 +470,10 @@ footer {
 /* ── Skills Grid ── */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 1rem;
     text-align: left;
+    width: 100%;
 }
 
 .skill-category h3 {
@@ -497,9 +499,10 @@ footer {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 1.25rem;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
     text-align: left;
+    width: 100%;
 }
 
 .project-card {
@@ -722,10 +725,21 @@ footer {
 }
 
 /* ── Responsive ── */
+@media screen and (min-width: 1400px) {
+    main {
+        padding-left: clamp(2rem, 5vw, 7rem);
+        padding-right: clamp(2rem, 5vw, 7rem);
+    }
+}
+
 @media screen and (max-width: 768px) {
     main {
-        padding: 1.5rem 5%;
+        padding: 1.5rem 1.25rem;
         padding-bottom: 3rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
     }
 
     .hero h2 {
